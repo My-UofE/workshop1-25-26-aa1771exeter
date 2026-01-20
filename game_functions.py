@@ -9,7 +9,10 @@ def pick_value(poss_values):
 def check_higher_lower(current_val, next_val, user_input):
     if (user_input == "h") & (next_val > current_val):
         return True
-    elif (user_input == "l") & (next_val < current_val):
+    else:
+        return False
+    
+    if (user_input == "l") & (next_val < current_val):
         return True
     else:
         return False
